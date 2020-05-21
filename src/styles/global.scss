@@ -1,4 +1,4 @@
-$font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$font-family: "Courier Prime",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
 html,
 body {
@@ -9,21 +9,21 @@ body {
   margin-top: 0
 }
 body.light {
-  --primary-color: #381696;
-  --primary-text-color: #fff;
-  --featured-bg: #493b8a;
-  --featured-text: #fff;
-  --secondary-color: #10072b;
-  --background: #fff;
-  --site-header: var(--background);
-  --card-bg: #fff;
-  --card-bdr: #eee;
-  --card-shadow: #d5d5d5;
+  --primary-color: #323001;
+  --primary-text-color: #000000;
+  --featured-bg: #323001;
+  --featured-text: #ebe306;
+  --secondary-color: #ebe306;
+  --background: #7d7803;
+  --site-header: #7d7803;
+  --card-bg: var(--primary-color);
+  --card-bdr: var(--primary-color);
+  --card-shadow: var(--primary-color);
   --btn-bg: var(--background);
-  --btn-bdr: #d3d6e7;
-  --btn-text-color: #868892;
+  --btn-bdr: #000000;
+  --btn-text-color: #ebe306;
   --btn-hover-bg: var(--btn-bdr);
-  --btn-hover-text-color: #00062b;
+  --btn-hover-text-color: #ebe306;
   --contact-bg: #f7f8fe;
   --contact-bdr: #d3d6e7;
   --input-bg: var(--background);
@@ -55,10 +55,10 @@ body {
   font-family: $font-family;
   border-top: 10px solid var(--primary-color);
   background-color: var(--background);
-  color: var(--text-color);
+  color: lighten(#000000, 20%);
 }
 a {
-  color: var(--primary-color);
+  color: var(--featured-text);
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -77,7 +77,7 @@ a {
   align-items: center;
   font-weight: 300;
   a {
-    color: #888;
+    color: var(--primary-color);
     text-decoration: none;
     margin: 0 8px 0;
     &[aria-current] {
@@ -85,7 +85,7 @@ a {
       font-weight: 700;
     }
     &:hover {
-      color: var(--primary-color);
+      color: var(--secondary-color);
     }
     &:last-child {
       margin-right: 0;
@@ -100,8 +100,12 @@ a {
   margin-bottom: 32px;
   align-items: center;
 }
+.site-title {
+  font-family: "Special Elite";
+  font-size: 3rem;
+}
 .site-title a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 900;
   text-transform: uppercase;
@@ -114,6 +118,7 @@ a {
   font-size: 36px;
   font-weight: 900;
   margin-bottom: 0.5rem;
+  color: black;
 }
 .button {
   padding: 18px 27px;
@@ -129,11 +134,11 @@ a {
   transition: background-color .3s linear;
   &.-primary {
     background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--primary-text-color);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
     &:hover {
-      background-color: var(--secondary-color);
-      color: var(--primary-text-color);
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
       text-decoration: none;
     }
   }
@@ -146,9 +151,11 @@ a {
   font-size: 18px;
   margin-bottom: 32px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 600;
+  color: lighten(#000000, 20%);
 }
 .post {
+  font-weight: 600;
   padding: 0;
   background:var(--background);
   color: var(--text-color);
@@ -171,17 +178,16 @@ a {
     margin-bottom: 32px;
     text-align: center;
   }
-  
 }
 .post-thumbnail {
   text-align: center;
   min-height: 380px;
-  //background-image: url('/assets/circles-light.png');
+  // background-image: url('/assets/circles-light.png');
   background-color: var(--featured-bg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 18px;
+  border-radius: 5px;
   margin-bottom: 36px;
   color: var(--featured-text);
   display: grid;
@@ -191,7 +197,7 @@ a {
   overflow: hidden;
   &:before {
     content: "";
-    background: rgba(0,0,0,0.4);
+    background: rgba(50, 48, 1, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -204,7 +210,7 @@ a {
     z-index: 2;
   }
   .post-meta {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 0;
   }
 }
@@ -215,6 +221,7 @@ a {
   margin-top: 32px;
 }
 .card {
+  color: var(--secondary-color);
   display: grid;
   background-color: var(--card-bg);
   border-radius: 9px;
@@ -223,10 +230,11 @@ a {
   overflow: hidden;
   line-height: 1.5;
   &:hover .post-link {
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
-  > a img {
+  a img {
     display: block;
+    overflow: hidden;
   }
   > header {
     padding: 24px;
@@ -237,13 +245,14 @@ a {
   .post-title {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
+    color: var(--secondary-color);
   }
   .post-meta {
     font-weight: 100;
     margin-bottom: 0;
   }
   .post-link {
-    color: var(--text-color);
+    color: var(--secondary-color);
     text-decoration: none;
   }
 }
@@ -254,9 +263,9 @@ a {
 .site-footer {
   text-align: center;
   margin: 90px 0 16px;
-  color: #666;
+  color: #000;
   a {
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 .form-container {
@@ -404,4 +413,11 @@ body.light {
     box-shadow: 0 0 0 2px;
     top: 8px;
     left: 2px
+}
+.icon {
+max-width: 200px;
+padding: 0 0 .75rem 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: black;
 }
