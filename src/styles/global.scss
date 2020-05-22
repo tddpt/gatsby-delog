@@ -29,26 +29,24 @@ body.light {
   --input-bg: var(--background);
 }
 body.dark {
-  --primary-color: #9984d5;
-  --primary-text-color: #fff;
-  --featured-bg: #66578d;
-  --featured-text: #fff;
-  --secondary-color: #66578d;
-  --background: #0A041A;
-  --text-color: rgba(255,255,255,0.88);
-  --text-secondary-color: rgba(255,255,255,0.66);
-  --site-header: var(--background);
-  --card-bg: #181326;
-  --card-bdr: #181326;
-  --card-shadow: #020204;
+  --primary-color: #323001;
+  --primary-text-color: #000000;
+  --featured-bg: #323001;
+  --featured-text: #ebe306;
+  --secondary-color: #ebe306;
+  --background: #7d7803;
+  --site-header: #7d7803;
+  --card-bg: var(--primary-color);
+  --card-bdr: var(--primary-color);
+  --card-shadow: var(--primary-color);
   --btn-bg: var(--background);
-  --btn-bdr: #d3d6e7;
-  --btn-text-color: #868892;
+  --btn-bdr: #000000;
+  --btn-text-color: #ebe306;
   --btn-hover-bg: var(--btn-bdr);
-  --btn-hover-text-color: #00062b;
-  --contact-bg: var(--card-shadow);
-  --contact-bdr: var(--card-bg);
-  --input-bg: var(--card-bg);
+  --btn-hover-text-color: #ebe306;
+  --contact-bg: #f7f8fe;
+  --contact-bdr: #d3d6e7;
+  --input-bg: var(--background);
 }
 /* System Fonts as used by Medium and WordPress */
 body {
