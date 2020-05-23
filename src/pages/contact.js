@@ -15,9 +15,8 @@ const ContactPage = ({
         <meta name="description" content={"Contact page of " + site.siteMetadata.description} />
       </Helmet>
       <div className="two-grids -contact">
-        <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
-          <h1 className="post-title">What can brown do for you?</h1>
-          <p>ARE WE FRIENDS NOW?</p>
+        <div className="post-thumbnail" style={{backgroundImage: `url('/assets/sun-fart.png')`, marginBottom: 0}}>
+          <h1 className="post-title">Are we friends now?</h1>
         </div>
         <div>
           <form className="form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
@@ -35,7 +34,7 @@ const ContactPage = ({
             </div>
             <div>
               <label htmlFor="w3lMessage">Message</label>
-              <textarea name="w3lMessage" id="w3lMessage"></textarea>
+              <textarea type="text" name="w3lMessage" id="w3lMessage"></textarea>
             </div>
             <div style={{display: "flex", justifyContent: "flex-end"}}>
               <input type="submit" className="button -primary" style={{marginRight: 0}} />
