@@ -168,16 +168,24 @@ a {
   > *:last-child {
     margin-bottom: 0;
   }
+
   .post-title {
-    text-align: center;
-    margin: 0 0 0.5rem;
+    display: table;
+    margin: 0 auto 0.5rem auto;
     line-height: 1.3;
     font-size: 2rem;
-    text-shadow: 2px 2px 2px hsla(58, 95%, 47%, 0.5);
+    background-color: #323001;
+    color: #ebe306;
+    padding: 5px;
+    text-decoration: underline;
   }
+
   .post-meta {
-    margin-bottom: 32px;
-    text-align: center;
+    display: table;
+    margin: 0px auto 32px auto;
+    padding: 2px;
+    background-color: #ebe306;
+    text-decoration: underline;
   }
 }
 .post-thumbnail {
@@ -200,7 +208,7 @@ a {
   overflow: hidden;
   &:before {
     content: "";
-    background: rgba(235, 227, 6, 0.5);
+    background: rgba(50, 48, 1, 0.6);
     position: absolute;
     top: 0;
     left: 0;

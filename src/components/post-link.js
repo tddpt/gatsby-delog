@@ -14,8 +14,11 @@ const PostLink = ({ post }) => (
           {post.frontmatter.title}
         </Link>
       </h2>
+      <div className="container">
       <div className="post-meta">{post.frontmatter.date}</div>
+    </div>
     </header>
+
   </article>
 )
 export default PostLink

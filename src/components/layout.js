@@ -25,7 +25,8 @@ export default ({ children }) => {
       </header>
       {children}
       <footer className="site-footer">
-        <p>&copy; 2020 Suicidal Fart Army &bull; Crafted with <span role="img" aria-label="love">❤️</span></p>
+        <a href="https://web.archive.org/web/20040830103506/http://funnyasfarting.mytopsitelist.com/funny" target="blank"><img src="assets/topfart1.gif" alt="Top Fart 1" /></a>
+        <p>&copy; 2020 Suicidal Farts</p>
       </footer>
     </div>
   )
