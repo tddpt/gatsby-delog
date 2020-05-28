@@ -15,7 +15,7 @@ const PostLink = ({ post }) => (
         </Link>
       </h2>
       <div className="container">
-      <div className="post-meta">{post.frontmatter.date}</div>
+      {/* <div className="post-meta">{post.frontmatter.date}</div> */}
     </div>
     </header>
 
