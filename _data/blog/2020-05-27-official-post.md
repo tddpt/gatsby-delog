@@ -8,7 +8,6 @@ thumbnail: /assets/Bull_farts.jpg
 ---
 💨 Purchase sodas, snacks, and eggs with cash.  
 
- 
 💨 Saving up your farts around the house is the key to getting your blasts across in public.  
 
 💨 The thinner the pants, the better.  
